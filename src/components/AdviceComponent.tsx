@@ -5,7 +5,7 @@ import myAdvice from '../Interfaces/interface';
 
 
 
-const AdviceComponent = (props: {slip: string, id: number}) => {
+const AdviceComponent = () => {
     const [adviceShow, setAdviceShow] = useState<myAdvice>();
     
 useEffect(() => {
@@ -20,7 +20,7 @@ useEffect(() => {
     }, [])
   return (
     <div>
-      <p>Advice # {adviceShow.slip.id}</p>
+      {/* <p>Advice # {adviceShow.slip.id}</p> */}
     </div>
   )
 }
